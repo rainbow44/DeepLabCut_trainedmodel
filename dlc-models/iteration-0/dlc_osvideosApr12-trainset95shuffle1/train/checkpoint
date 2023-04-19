@@ -1,0 +1,6 @@
+model_checkpoint_path: "/content/drive/My Drive/dlc_osvideos/dlc-models/iteration-0/dlc_osvideosApr12-trainset95shuffle1/train/snapshot-500000"
+all_model_checkpoint_paths: "/content/drive/My Drive/dlc_osvideos/dlc-models/iteration-0/dlc_osvideosApr12-trainset95shuffle1/train/snapshot-480000"
+all_model_checkpoint_paths: "/content/drive/My Drive/dlc_osvideos/dlc-models/iteration-0/dlc_osvideosApr12-trainset95shuffle1/train/snapshot-485000"
+all_model_checkpoint_paths: "/content/drive/My Drive/dlc_osvideos/dlc-models/iteration-0/dlc_osvideosApr12-trainset95shuffle1/train/snapshot-490000"
+all_model_checkpoint_paths: "/content/drive/My Drive/dlc_osvideos/dlc-models/iteration-0/dlc_osvideosApr12-trainset95shuffle1/train/snapshot-495000"
+all_model_checkpoint_paths: "/content/drive/My Drive/dlc_osvideos/dlc-models/iteration-0/dlc_osvideosApr12-trainset95shuffle1/train/snapshot-500000"

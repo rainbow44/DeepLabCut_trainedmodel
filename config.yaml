@@ -1,0 +1,82 @@
+    # Project definitions (do not edit)
+Task: dlc_osvideos
+scorer: tng
+date: Apr12
+multianimalproject: false
+identity:
+
+    # Project path (change when moving around)
+project_path: /content/drive/My Drive/dlc_osvideos
+
+    # Annotation data set configuration (and individual video cropping parameters)
+video_sets:
+  /content/drive/MyDrive/dlc_osvideos/videos/10_6-OSJ.mp4:
+    crop: 1250, 2940, 550, 2160
+  /content/drive/MyDrive/dlc_osvideos/videos/8_25-OSB.mp4:
+    crop: 610, 1525, 280, 1080
+  /content/drive/MyDrive/dlc_osvideos/videos/9_1-OSF.mp4:
+    crop: 250, 1240, 180, 1080
+  /content/drive/MyDrive/dlc_osvideos/videos/9_29-OSF.mp4:
+    crop: 620, 1520, 230, 1080
+  /content/drive/MyDrive/dlc_osvideos/videos/9_8-OSB.mp4:
+    crop: 290, 1300, 220, 1080
+  /content/drive/MyDrive/dlc_osvideos/videos/9_15-OSF.mp4:
+    crop: 560, 1480, 230, 1080
+  /content/drive/MyDrive/dlc_osvideos/videos/9_22-OSD.mp4:
+    crop: 560, 1480, 230, 1080
+  /content/drive/MyDrive/dlc_osvideos/videos/10_20-OSG.mp4:
+    crop: 1300, 2960, 550, 2160
+  /content/drive/MyDrive/dlc_osvideos/videos/10_20-OSJ.mp4:
+    crop: 1300, 2960, 550, 2160
+  /content/drive/MyDrive/dlc_osvideos/videos/11_3-OSG-c.mp4:
+    crop: 1300, 2960, 490, 2160
+bodyparts:
+- nose
+- leftear
+- rightear
+- upperspine
+- middlespine
+- lowerspine
+- tailbase
+
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+start: 0
+stop: 1
+numframes2pick: 30
+
+    # Plotting configuration
+skeleton: [[leftear, rightear], [nose, leftear], [nose, rightear], [rightear, tailbase],
+  [leftear, tailbase]]
+skeleton_color: black
+pcutoff: 0.6
+dotsize: 3
+alphavalue: 0.7
+colormap: YlOrRd
+
+    # Training,Evaluation and Analysis configuration
+TrainingFraction:
+- 0.95
+iteration: 0
+default_net_type: resnet_50
+default_augmenter: default
+snapshotindex: -1
+batch_size: 8
+
+    # Cropping Parameters (for analysis and outlier frame detection)
+cropping: true
+    #if cropping is true for analysis, then set the values here:
+x1: 610
+x2: 1525
+y1: 280
+y2: 1080
+
+    # Refinement configuration (parameters from annotation dataset configuration also relevant in this stage)
+corner2move2:
+- 50
+- 50
+move2corner: true
