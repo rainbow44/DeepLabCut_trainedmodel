@@ -68,7 +68,7 @@ snapshotindex: -1
 batch_size: 8
 
     # Cropping Parameters (for analysis and outlier frame detection)
-cropping: true
+cropping: false
     #if cropping is true for analysis, then set the values here:
 x1: 610
 x2: 1525
