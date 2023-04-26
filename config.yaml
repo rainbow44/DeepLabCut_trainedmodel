@@ -5,7 +5,7 @@ date: Apr12
 multianimalproject: false
 identity:
 
-    # Project path (change when moving around)
+    # Project path 
 project_path: /content/drive/My Drive/dlc_osvideos
 
     # Annotation data set configuration (and individual video cropping parameters)
@@ -53,7 +53,7 @@ numframes2pick: 30
 skeleton: [[leftear, rightear], [nose, leftear], [nose, rightear], [rightear, tailbase],
   [leftear, tailbase]]
 skeleton_color: black
-pcutoff: 0.6
+pcutoff: 0.9
 dotsize: 3
 alphavalue: 0.7
 colormap: YlOrRd
